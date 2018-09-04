@@ -1,4 +1,4 @@
-import uglify from "rollup-plugin-uglify";
+import {terser} from "rollup-plugin-terser";
 
 export default [
   {
@@ -15,7 +15,7 @@ export default [
   {
     input: "index.js",
     plugins: [
-      uglify({
+      terser({
         output: {
           preamble: `// @observablehq/graphviz Copyright ${(new Date).getFullYear()} Observable, Inc.
 // Viz.js Copyright 2014-2018 Michael Daines`

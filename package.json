@@ -16,10 +16,8 @@
     "prepublishOnly": "rollup -c"
   },
   "devDependencies": {
-    "rollup": "^0.58.2",
-    "viz.js": "^1.8.1"
-  },
-  "dependencies": {
-    "rollup-plugin-uglify": "^3.0.0"
+    "rollup": "0.65",
+    "rollup-plugin-terser": "2",
+    "viz.js": "2"
   }
 }
