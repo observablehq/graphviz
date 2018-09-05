@@ -1,6 +1,6 @@
 {
   "name": "@observablehq/graphviz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A convenience method for using Graphviz.",
   "keywords": [
     "graphviz"
