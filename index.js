@@ -5,7 +5,7 @@ const defaults = {files: [], format: "svg", engine: "dot"};
 function Dot(options) {
   options = Object.assign({}, defaults, options);
   let module = Module(Object.assign({}, options));
-  return async function dot(strings) {
+  return function dot(strings) {
     let string = strings[0] + "", i = 0, n = arguments.length;
     while (++i < n) string += arguments[i] + "" + strings[i];
     const template = document.createElement("template");
