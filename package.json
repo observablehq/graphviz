@@ -8,7 +8,9 @@
   "homepage": "https://github.com/observablehq/graphviz",
   "repository": "https://github.com/observablehq/graphviz",
   "license": "ISC",
-  "main": "dist/graphviz.min.js",
+  "type": "module",
+  "module": "dist/graphviz.js",
+  "exports": "./dist/graphviz.js",
   "author": {
     "name": "Observable, Inc."
   },
@@ -16,8 +18,10 @@
     "prepublishOnly": "rollup -c"
   },
   "devDependencies": {
-    "rollup": "0.66",
-    "rollup-plugin-terser": "3",
-    "viz.js": "2"
+    "rollup": "3.3.0",
+    "@rollup/plugin-terser": "0.1.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-replace": "5.0.1",
+    "@hpcc-js/wasm": "2.1.1"
   }
 }
